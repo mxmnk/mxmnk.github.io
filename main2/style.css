@@ -233,7 +233,7 @@ img {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 #container {
-        grid-auto-columns: calc(50% - 20px * 2);
+        grid-auto-columns: calc(50% - 40px * 2);
 }
 }
 
@@ -244,7 +244,7 @@ img {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
 #container {
-        grid-auto-columns: calc(50% - 20px * 2);
+        grid-auto-columns: calc(50% - 40px * 2);
 }
 }
 
@@ -255,7 +255,7 @@ img {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
 #container {
-        grid-auto-columns: calc(50% - 20px * 2);
+        grid-auto-columns: calc(50% - 40px * 2);
 }
 }
 
@@ -267,7 +267,7 @@ img {
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
 #container {
-        grid-auto-columns: calc(50% - 20px * 2);
+        grid-auto-columns: calc(50% - 40px * 2);
 }
 }
 
@@ -278,8 +278,8 @@ img {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
 #container {
-        grid-auto-columns: calc(50% - 20px * 2);
-}
+        grid-auto-columns: calc(50% - 40px * 2);
+}   
 }
 
 /* Landscape */
@@ -298,8 +298,8 @@ img {
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
- #container {
-        grid-auto-columns: calc(50% - 20px * 2);
+#container {
+        grid-auto-columns: calc(50% - 40px * 2);
 }}
 
 /* Portrait */
@@ -309,7 +309,7 @@ img {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
 #container {
-        grid-auto-columns: calc(50% - 20px * 2);
+        grid-auto-columns: calc(50% - 40px * 2);
 }
 }
 
@@ -320,7 +320,7 @@ img {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
 #container {
-        grid-auto-columns: calc(50% - 20px * 2);
+        grid-auto-columns: calc(50% - 40px * 2);
 }
 }
 
