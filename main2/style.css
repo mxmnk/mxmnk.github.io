@@ -153,7 +153,7 @@ img {
     grid-auto-flow: column;
     grid-auto-columns: minmax(150px, 1fr); /*125 for resposive */
     overflow-x: scroll;
-   
+    cursor: pointer;
    /* grid-auto-columns: calc(50% - 20px * 2);*/
 
 }
