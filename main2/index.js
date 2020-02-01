@@ -106,14 +106,13 @@ const data = [
 ];
 
 
-let qwerty = document.getElementsByClassName("items");
-
-for (let j = 0; j < qwerty.length; j++) {
+let movies = document.getElementsByClassName("items");
+for (let j = 0; j < movies.length; j++) {
   for (let i = 0; i < data.length; i++) {
-    qwerty[j].innerHTML += 
+    movies[j].innerHTML += 
     `<div class="item"><img src="images/${i}.jpg" alt="${data[i].name}">
     <p>${data[i].name}</p>
-    <span id="year">2019</span>
+    
     </div>`;
   }
 }
@@ -161,36 +160,34 @@ for (let j = 0; j < qwerty.length; j++) {
 
 
 /*DELETE ACTIVE */
-const slider = document.querySelector('#containerrrr');
+const slider = document.getElementsByClassName('noselect');
 let isDown = false;
 let startX;
 let scrollLeft;
 
-slider.addEventListener('mousedown', (e) => {
+for (let i = 0; i < 2; i++) {
+slider[i].addEventListener('mousedown', (e) => {
   isDown = true;
-  slider.classList.add('active');
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
+  slider[i].classList.add('active');
+  startX = e.pageX - slider[i].offsetLeft;
+  scrollLeft = slider[i].scrollLeft;
 });
-slider.addEventListener('mouseleave', () => {
+slider[i].addEventListener('mouseleave', () => {
   isDown = false;
-  slider.classList.remove('active');
+  slider[i].classList.remove('active');
 });
-slider.addEventListener('mouseup', () => {
+slider[i].addEventListener('mouseup', () => {
   isDown = false;
-  slider.classList.remove('active');
+  slider[i].classList.remove('active');
 });
-slider.addEventListener('mousemove', (e) => {
+slider[i].addEventListener('mousemove', (e) => {
   if(!isDown) return;
   e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
+  const x = e.pageX - slider[i].offsetLeft;
   const walk = (x - startX); //scroll-fast
-  slider.scrollLeft = scrollLeft - walk;
+  slider[i].scrollLeft = scrollLeft - walk;
   console.log(walk);
-});
-
-
-
+});}
 
 
 
@@ -198,3 +195,36 @@ slider.addEventListener('mousemove', (e) => {
 document.addEventListener('dragstart', (event) => {
   event.preventDefault();
 }, true);
+
+
+
+
+
+
+
+    var button = document.getElementById('slide');
+button.onclick = function () {
+    var container = document.getElementById('container');
+    sideScroll(container,'right',2, window.screen.width,10);
+};
+
+var back = document.getElementById('slideBack');
+back.onclick = function () {
+    var container = document.getElementById('container');
+    sideScroll(container,'left',2,window.screen.width,10);
+};
+
+function sideScroll(element,direction,speed,distance,step){
+    scrollAmount = 0;
+    var slideTimer = setInterval(function(){
+        if(direction == 'left'){
+            element.scrollLeft -= step;
+        } else {
+            element.scrollLeft += step;
+        }
+        scrollAmount += step;
+        if(scrollAmount >= distance){
+            window.clearInterval(slideTimer);
+        }
+    }, speed);
+}
