@@ -1,4 +1,4 @@
-\html,
+html,
 body,
 div,
 span,
@@ -679,7 +679,7 @@ img {
 #slideBack, #slide {
   cursor: pointer;
   position: absolute;
-  top: 30%;
+  top: 100%;
   width: auto;
   padding: 1.5%;
   user-select: none;
