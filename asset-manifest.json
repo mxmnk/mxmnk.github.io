@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mxmnk.github.io/wordy/static/css/main.1144d03e.chunk.css",
+    "main.js": "/mxmnk.github.io/wordy/static/js/main.244ad322.chunk.js",
+    "main.js.map": "/mxmnk.github.io/wordy/static/js/main.244ad322.chunk.js.map",
+    "runtime-main.js": "/mxmnk.github.io/wordy/static/js/runtime-main.cd860875.js",
+    "runtime-main.js.map": "/mxmnk.github.io/wordy/static/js/runtime-main.cd860875.js.map",
+    "static/js/2.589c9cf4.chunk.js": "/mxmnk.github.io/wordy/static/js/2.589c9cf4.chunk.js",
+    "static/js/2.589c9cf4.chunk.js.map": "/mxmnk.github.io/wordy/static/js/2.589c9cf4.chunk.js.map",
+    "index.html": "/mxmnk.github.io/wordy/index.html",
+    "precache-manifest.15c510c3f7b32279c200ab3ee3cfbd4c.js": "/mxmnk.github.io/wordy/precache-manifest.15c510c3f7b32279c200ab3ee3cfbd4c.js",
+    "service-worker.js": "/mxmnk.github.io/wordy/service-worker.js",
+    "static/css/main.1144d03e.chunk.css.map": "/mxmnk.github.io/wordy/static/css/main.1144d03e.chunk.css.map",
+    "static/js/2.589c9cf4.chunk.js.LICENSE.txt": "/mxmnk.github.io/wordy/static/js/2.589c9cf4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cd860875.js",
+    "static/js/2.589c9cf4.chunk.js",
+    "static/css/main.1144d03e.chunk.css",
+    "static/js/main.244ad322.chunk.js"
+  ]
+}
