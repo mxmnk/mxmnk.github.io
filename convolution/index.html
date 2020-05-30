@@ -3,91 +3,73 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Img Processing</title>
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
         <div class="container">
-            <div class="sub-containe">
-                <div class="nav-bar center-flex"></div>
+            <div class="box-container">
+                <canvas
+                    id="canvas"
+                    class="potrait center-flex"
+                    height="450"
+                    width="450"
+                />
             </div>
-            <div class="sub-containe">
-                <div class="body-container">
-                    <div class="left-box center-flex">
-                        <div class="box-container">
-                            <canvas
-                                id="canvas"
-                                class="potrait center-flex"
-                                height="450"
-                                width="450"
-                            />
+
+            <div class="right-box center-flex">
+                <div class="box-container">
+                    <div class="filter-box">
+                        <div class="filter-container">
+                            <div class="filter-title center-flex">
+                                Play with Below
+                            </div>
                         </div>
-                    </div>
-                    <div class="right-box center-flex">
-                        <div class="box-container">
-                            <div class="filter-box">
-                                <div class="filter-container">
-                                    <div class="filter-title center-flex">
-                                        Play with Below
-                                    </div>
+                        <div class="filter-container center-flex">
+                            <div class="filter-body">
+                                <div class="filter-list">
+                                    <p>Saturation:</p>
+                                    <input
+                                        class="slider"
+                                        id="bw"
+                                        type="range"
+                                        onchange="imageProcess()"
+                                        min="0"
+                                        max="100"
+                                        value="0"
+                                    />
                                 </div>
-                                <div class="filter-container center-flex">
-                                    <div class="filter-body">
-                                        <div class="filter-list">
-                                            <p>Saturation:</p>
-                                            <input
-                                                class="slider"
-                                                id="bw"
-                                                type="range"
-                                                onchange="imageProcess()"
-                                                min="0"
-                                                max="100"
-                                                value="0"
-                                            />
-                                        </div>
-                                        <div class="filter-list">
-                                            <p id="filter-title">No Filter:</p>
-                                            <input
-                                                class="slider"
-                                                id="filter"
-                                                type="range"
-                                                onchange="processConv()"
-                                                min="0"
-                                                max="13"
-                                                value="0"
-                                            />
-                                        </div>
-                                        <div class="filter-list">
-                                            <p>Contrast:</p>
-                                            <input
-                                                class="slider"
-                                                id="contrast"
-                                                type="range"
-                                                onchange="processContrast()"
-                                                min="0"
-                                                max="100"
-                                                value="0"
-                                            />
-                                        </div>
-                                    </div>
+                                <div class="filter-list">
+                                    <p id="filter-title">No Filter:</p>
+                                    <input
+                                        class="slider"
+                                        id="filter"
+                                        type="range"
+                                        onchange="processConv()"
+                                        min="0"
+                                        max="13"
+                                        value="0"
+                                    />
                                 </div>
-                                <div class="filter-container">
-                                    <div class="filter-footer center-flex">
-                                        Footer
-                                    </div>
+                                <div class="filter-list">
+                                    <p>Contrast:</p>
+                                    <input
+                                        class="slider"
+                                        id="contrast"
+                                        type="range"
+                                        onchange="processContrast()"
+                                        min="0"
+                                        max="100"
+                                        value="0"
+                                    />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="sub-containe">
-                <div class="footer-container center-flex">
-                    V
-                </div>
-            </div>
         </div>
+
         <script src="./script.js"></script>
     </body>
 </html>
