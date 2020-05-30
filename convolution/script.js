@@ -127,7 +127,7 @@ function imageProcess() {
 
   let image = new Image();
   let scale = 0.2;
-  image.src = './photo.jpeg';
+  image.src = './photo.jpg';
 
   image.onload = () => {
     context.drawImage(image, 0, 0, 450, 450);
@@ -145,7 +145,7 @@ function processConv() {
   contrastLabel.innerHTML = filterlist[contrast].label + ':';
   let image = new Image();
   let scale = 0.2;
-  image.src = './photo.jpeg';
+  image.src = './photo.jpg';
 
   image.onload = () => {
     context.drawImage(image, 0, 0, 450, 450);
@@ -166,7 +166,7 @@ function processContrast() {
 
   let image = new Image();
   let scale = 0.2;
-  image.src = './photo.jpeg';
+  image.src = './photo.jpg';
 
   image.onload = () => {
     context.drawImage(image, 0, 0, 450, 450);
