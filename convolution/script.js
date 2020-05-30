@@ -4,7 +4,7 @@ var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
 let image = new Image();
 let scale = 0.2;
-image.src = './photo.jpeg';
+image.src = './photo.jpg';
 
 var filterlist = [
   { label: 'No Filter', value: [0, 0, 0, 0, 1, 0, 0, 0, 0] },
