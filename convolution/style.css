@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Bowlby+One+SC&display=swap&subset=latin-ext');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Bowlby One SC', cursive;
+    font-family: 'Anton', sans-serif;
+}
+
+body{
+    background-image: radial-gradient(rgb(35, 35, 35),rgb(0, 0, 0));
+    height: 100vh;
+    color: white;
+    letter-spacing: 3px;
+    cursor: url(./Ellipse.png) 2 2, auto;
+}
+.nav-bar{
+    height: 20vh;
+}
+
+.body-container{
+    height: 60vh;
+}
+.left-box{
+    float: left;
+    height: 60vh;
+    width: 50vw;
+    font-size: 20rem;
+}
+.right-box{
+    float: right;
+    height: 60vh;
+    width: 50vw;
+}
+.footer-container{
+    height: 20vh;
+}
+.center-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.v-center{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.h-center{
+    position: absolute;
+    right: 50%;
+    transform: translateX(-50%);
+}
+.v-top{
+    display: absolute;
+    top:0%;
+}
+.mousePointer{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+.nav-items{
+    display: inline;
+    padding: 4vw;
+}
+.nav-link{
+    cursor: pointer;
+}
+.potrait{
+}
+.filter-list{
+    padding: 10px;
+}
+.filter-title{
+    height: 5vw;
+}
+.filter-body{
+    height: 25vh;
+}
+.filter-footer{
+    height: 5vh;
+}
+.slider{
+    padding: 10px 0px;
+    width: 30vw;
+}
+
