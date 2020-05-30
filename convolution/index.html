@@ -1,74 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Img Processing</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="box-container">
-                <canvas
-                    id="canvas"
-                    class="potrait center-flex"
-                    height="450"
-                    width="450"
-                />
-            </div>
-
-            <div class="right-box center-flex">
-                <div class="box-container">
-                    <div class="filter-box">
-                        <div class="filter-container">
-                            <div class="filter-title center-flex">
-                                Play with Below
-                            </div>
-                        </div>
-                        <div class="filter-container center-flex">
-                            <div class="filter-body">
-                                <div class="filter-list">
-                                    <p>Saturation:</p>
-                                    <input
-                                        class="slider"
-                                        id="bw"
-                                        type="range"
-                                        onchange="imageProcess()"
-                                        min="0"
-                                        max="100"
-                                        value="0"
-                                    />
-                                </div>
-                                <div class="filter-list">
-                                    <p id="filter-title">No Filter:</p>
-                                    <input
-                                        class="slider"
-                                        id="filter"
-                                        type="range"
-                                        onchange="processConv()"
-                                        min="0"
-                                        max="13"
-                                        value="0"
-                                    />
-                                </div>
-                                <div class="filter-list">
-                                    <p>Contrast:</p>
-                                    <input
-                                        class="slider"
-                                        id="contrast"
-                                        type="range"
-                                        onchange="processContrast()"
-                                        min="0"
-                                        max="100"
-                                        value="0"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <script src="./script.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Img Processing</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      input {
+      }
+      .block {
+        padding-left: 10px;
+      }
+      .subblock {
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <canvas
+        id="canvas"
+        class="potrait center-flex"
+        height="450"
+        width="450"
+      />
+    </div>
+    <div class="block">
+      <div class="subblock">
+        <p>Saturation:</p>
+        <input
+          class="slider"
+          id="bw"
+          type="range"
+          onchange="imageProcess()"
+          min="0"
+          max="100"
+          value="0"
+        />
+      </div>
+      <div class="subblock">
+        <p id="filter-title">No Filter:</p>
+        <input
+          class="slider"
+          id="filter"
+          type="range"
+          onchange="processConv()"
+          min="0"
+          max="13"
+          value="0"
+        />
+      </div>
+      <div class="subblock">
+        <p>Contrast:</p>
+        <input
+          class="slider"
+          id="contrast"
+          type="range"
+          onchange="processContrast()"
+          min="0"
+          max="100"
+          value="0"
+        />
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
