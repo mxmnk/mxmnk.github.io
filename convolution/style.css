@@ -12,7 +12,6 @@ body{
     height: 100vh;
     color: white;
     letter-spacing: 3px;
-    cursor: url(./Ellipse.png) 2 2, auto;
 }
 .nav-bar{
     height: 20vh;
